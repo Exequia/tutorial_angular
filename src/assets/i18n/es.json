@@ -1,6 +1,9 @@
 {
   "commons": {
-    "console": "Abra la consola del navegador para analizar los cambios. Debe centrarse en la seccion {{section}}"
+    "doc": "Documentación Técnica Oficial",
+    "console": "Abra la consola del navegador para analizar los cambios. Debe centrarse en la seccion {{section}}",
+    "pipes": "Pipes",
+    "directives": "Directivas"
   },
   "home": {
     "title": "Tutorial con los cambios más relevantes",
@@ -12,6 +15,10 @@
       "group": "Imagenes",
       "native": "Nativa",
       "optimized": "Optimizada"
+    },
+    "standalone": {
+      "standalone": "Standalone",
+      "group": "Standalone"
     }
   },
   "images": {
@@ -27,6 +34,18 @@
         "title": "Nueva directiva NgOptimizedImage",
         "message": "Asegurese de refrescar la página sin caché, y verá una carga de imagenes inical menor"
       }
+    }
+  },
+  "standalone": {
+    "title": "Componentes Independientes (Standalone)",
+    "message": "Los componentes, directivas y pipes ahora se pueden marcar como independientes",
+    "pipes": {
+      "description": "Esta Pipe revice un texto por parámetro, y aplicará un separador entre cada letra que puede ser personalizado",
+      "text": "Texto a separar",
+      "test": "Angular 17"
+    },
+    "directives": {
+      "description": "Esta Directiva activa un background-color definido por parametro cada vez que se pasa el mouse por encima"
     }
   }
 }

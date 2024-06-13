@@ -20,12 +20,8 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'main/syntax',
-    loadComponent: () => import('./views/syntax/syntax.component'),
-  },
-  {
-    path: 'main/deferrable',
-    loadComponent: () => import('./views/deferrable/deferrable.component'),
+    path: 'standalone/standalone',
+    loadComponent: () => import('./views/standalone/standalone.component'),
   },
   { path: 'home', redirectTo: '/', pathMatch: 'full' },
 ];

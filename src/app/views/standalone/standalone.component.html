@@ -1,0 +1,45 @@
+<h1>{{ "standalone.title" | translate }}</h1>
+<div class="alert alert-info">
+  {{ "standalone.message" | translate }}
+  <a
+    href="https://v17.angular.io/guide/standalone-components"
+    target="_blank"
+    >{{ "commons.doc" | translate }}</a
+  >
+</div>
+
+<hr />
+<h2>{{ "commons.pipes" | translate }}</h2>
+
+<div class="alert alert-info">
+  {{ "standalone.pipes.description" | translate }}
+</div>
+
+<div class="row mb-2">
+  <div class="col">
+    {{ "standalone.pipes.text" | translate }}: {{ pipeText }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 col-sm-6">{{ pipeText | separator }}</div>
+  <div class="col-md-4 col-sm-6">{{ pipeText | separator : "*" }}</div>
+  <div class="col-md-4 col-sm-6">{{ pipeText | separator : "." }}</div>
+</div>
+
+<hr />
+<h2>{{ "commons.directives" | translate }}</h2>
+<div class="alert alert-info">
+  {{ "standalone.directives.description" | translate }}
+</div>
+<div class="row">
+  <div class="col">
+    <p class="p-2 rounded" appHoverHighlight highlightColor="lightblue">
+      Hover over this text to see the effect!
+    </p>
+  </div>
+  <div class="col">
+    <p class="p-2 rounded" appHoverHighlight highlightColor="lightgreen">
+      Hover over this text too!
+    </p>
+  </div>
+</div>

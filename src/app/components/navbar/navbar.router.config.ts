@@ -18,10 +18,23 @@ export const routesConfig: RoutesConfig = {
       path: '/optimized',
     },
   ],
-  other: [
+  standalone: [
     {
-      label: 'other',
-      path: '/other',
+      label: 'standalone',
+      path: '/standalone',
     },
   ],
+  forms: [
+    {
+      label: 'typed Forms',
+      path: '/forms',
+    },
+    {
+      label: 'typed Controls',
+      path: '/controls',
+    },
+  ],
+  sintaxys: [],
+  signals: [],
+  deferrable: [],
 };
