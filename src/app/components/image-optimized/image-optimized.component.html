@@ -1,0 +1,23 @@
+<div class="alert alert-info">
+  {{ "images.children.optimized.message" | translate }}
+</div>
+
+<h2 class="mb-5">{{ "images.children.optimized.title" | translate }}</h2>
+
+@for (character of dragonBallCharacter; track character.name) {
+<div class="row">
+  <div class="col">
+    <img
+      [ngSrc]="character.imgUrl"
+      [alt]="character.name"
+      class="rounded float-start"
+      width="200"
+      height="400"
+    />
+  </div>
+  <div class="col d-flex align-items-center text-center">
+    <p class="fs-3">{{ character.name }}</p>
+  </div>
+</div>
+<hr />
+}

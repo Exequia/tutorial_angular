@@ -1,0 +1,18 @@
+<h2 class="mb-5">{{ "images.children.native.title" | translate }}</h2>
+
+@for (character of dragonBallCharacter; track character.name) {
+<div class="row">
+  <div class="col">
+    <img
+      [src]="character.imgUrl"
+      [alt]="character.name"
+      class="rounded float-start"
+      style="width: 200px; height: 400px"
+    />
+  </div>
+  <div class="col d-flex align-items-center text-center">
+    <p class="fs-3">{{ character.name }}</p>
+  </div>
+</div>
+<hr />
+}

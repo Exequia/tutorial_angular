@@ -1,0 +1,32 @@
+{
+  "commons": {
+    "console": "Abra la consola del navegador para analizar los cambios. Debe centrarse en la seccion {{section}}"
+  },
+  "home": {
+    "title": "Tutorial con los cambios más relevantes",
+    "description": "Este proyecto contiene ejemplos referente a las últimas versiones de Angular",
+    "instruction": "No olvide seguir las instrucciones indicadas en cuadros informativos como este"
+  },
+  "navbar": {
+    "images": {
+      "group": "Imagenes",
+      "native": "Nativa",
+      "optimized": "Optimizada"
+    }
+  },
+  "images": {
+    "title": "Optimización de imagenes",
+    "message": "La nueva clase NgOptimizedImage, permite optimizar las imagenes de forma sencilla",
+    "native": "Nativa",
+    "optimized": "Optimizada",
+    "children": {
+      "native": {
+        "title": "Uso de elemento img nativo de HTML"
+      },
+      "optimized": {
+        "title": "Nueva directiva NgOptimizedImage",
+        "message": "Asegurese de refrescar la página sin caché, y verá una carga de imagenes inical menor"
+      }
+    }
+  }
+}

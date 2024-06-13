@@ -1,0 +1,36 @@
+<h1>{{ "images.title" | translate }}</h1>
+<div class="alert alert-info">
+  {{ "images.message" | translate }}
+  <br />
+  <a
+    href="https://angular.dev/guide/image-optimization#advanced-sizes-values"
+    target="_blank"
+    >Oficial Doc "image-optimization"</a
+  >
+</div>
+<hr />
+<div class="alert alert-warning">
+  {{ "commons.console" | translate : { section: "Network -> Img" } }}
+</div>
+<div class="d-flex justify-content-around mb-3">
+  <a
+    [routerLink]="'native'"
+    routerLinkActive="active"
+    class="btn btn-outline-secondary"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "images.native" | translate }}
+  </a>
+  <a
+    [routerLink]="'optimized'"
+    routerLinkActive="active"
+    class="btn btn-outline-success"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "images.optimized" | translate }}
+  </a>
+</div>
+
+<router-outlet />
