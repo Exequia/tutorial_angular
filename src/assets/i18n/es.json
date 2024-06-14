@@ -3,7 +3,8 @@
     "doc": "Documentación Técnica Oficial",
     "console": "Abra la consola del navegador para analizar los cambios. Debe centrarse en la seccion {{section}}",
     "pipes": "Pipes",
-    "directives": "Directivas"
+    "directives": "Directivas",
+    "required": "Campo Requerido"
   },
   "home": {
     "title": "Tutorial con los cambios más relevantes",
@@ -19,6 +20,12 @@
     "standalone": {
       "standalone": "Standalone",
       "group": "Standalone"
+    },
+    "types": {
+      "types": "Tipados",
+      "group": "Tipos",
+      "untyped": "Sin tipado",
+      "typed": "Con tipado"
     }
   },
   "images": {
@@ -47,5 +54,17 @@
     "directives": {
       "description": "Esta Directiva activa un background-color definido por parametro cada vez que se pasa el mouse por encima"
     }
+  },
+  "types": {
+    "title": "Controles y Formularios con Tipado (Typed Forms)",
+    "message": "Con esta nueva funcionalidad se podrán definir la estructura de los formularios y controles de forma más segura",
+    "form": {
+      "name": "Nombre",
+      "surename": "Apellido",
+      "age": "Edad",
+      "height": "Altura"
+    },
+    "formValues": "Valores del Formulario",
+    "modelValues": "Valores del Modelo. (Se actualizará al validar el formulario)"
   }
 }

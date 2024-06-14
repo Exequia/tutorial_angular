@@ -24,14 +24,14 @@ export const routesConfig: RoutesConfig = {
       path: '/standalone',
     },
   ],
-  forms: [
+  types: [
     {
-      label: 'typed Forms',
-      path: '/forms',
+      label: 'untyped',
+      path: '/untyped',
     },
     {
-      label: 'typed Controls',
-      path: '/controls',
+      label: 'typed',
+      path: '/typed',
     },
   ],
   sintaxys: [],

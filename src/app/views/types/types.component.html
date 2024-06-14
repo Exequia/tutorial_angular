@@ -1,0 +1,31 @@
+<h1>{{ "types.title" | translate }}</h1>
+<div class="alert alert-info">
+  {{ "types.message" | translate }}
+  <a href="https://v17.angular.io/guide/typed-forms" target="_blank">{{
+    "commons.doc" | translate
+  }}</a>
+</div>
+
+<hr />
+<div class="d-flex justify-content-around mb-3">
+  <a
+    [routerLink]="'untyped'"
+    routerLinkActive="active"
+    class="btn btn-outline-secondary"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "navbar.types.untyped" | translate }}
+  </a>
+  <a
+    [routerLink]="'typed'"
+    routerLinkActive="active"
+    class="btn btn-outline-success"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "navbar.types.typed" | translate }}
+  </a>
+</div>
+
+<router-outlet />

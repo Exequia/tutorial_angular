@@ -23,5 +23,20 @@ export const routes: Routes = [
     path: 'standalone/standalone',
     loadComponent: () => import('./views/standalone/standalone.component'),
   },
+  {
+    path: 'types',
+    loadComponent: () => import('./views/types/types.component'),
+    children: [
+      { path: '', redirectTo: 'native', pathMatch: 'full' },
+      {
+        path: 'untyped',
+        loadComponent: () => import('./components/untyped/untyped.component'),
+      },
+      {
+        path: 'typed',
+        loadComponent: () => import('./components/typed/typed.component'),
+      },
+    ],
+  },
   { path: 'home', redirectTo: '/', pathMatch: 'full' },
 ];
