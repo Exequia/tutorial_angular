@@ -1,0 +1,36 @@
+<h1>{{ "signals.title" | translate }}</h1>
+<div class="alert alert-info">
+  {{ "signals.message" | translate }}
+  <a href="https://v17.angular.io/guide/signals" target="_blank">{{
+    "commons.doc" | translate
+  }}</a>
+</div>
+<hr />
+
+<div class="alert alert-warning my-3">
+  {{ "commons.console" | translate : { section: "Console" } }}<br />
+  {{ "signals.expectedAction" | translate : { section: "Console" } }}
+</div>
+
+<div class="d-flex justify-content-around mb-3">
+  <a
+    [routerLink]="'change-detector'"
+    routerLinkActive="active"
+    class="btn btn-outline-secondary"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "navbar.signals.changeDetector" | translate }}
+  </a>
+  <a
+    [routerLink]="'signal'"
+    routerLinkActive="active"
+    class="btn btn-outline-success"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "navbar.signals.signal" | translate }}
+  </a>
+</div>
+
+<router-outlet />

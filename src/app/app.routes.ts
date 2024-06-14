@@ -54,5 +54,21 @@ export const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'signals',
+    loadComponent: () => import('./views/signals/signals.component'),
+    children: [
+      { path: '', redirectTo: 'change-detector', pathMatch: 'full' },
+      {
+        path: 'change-detector',
+        loadComponent: () =>
+          import('./components/change-detector/change-detector.component'),
+      },
+      {
+        path: 'signal',
+        loadComponent: () => import('./components/signal/signal.component'),
+      },
+    ],
+  },
   { path: 'home', redirectTo: '/', pathMatch: 'full' },
 ];

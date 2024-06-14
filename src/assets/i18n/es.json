@@ -31,6 +31,11 @@
       "legacy": "Legacy",
       "newSyntax": "Nueva Sintaxis",
       "group": "Nueva Sintaxis"
+    },
+    "signals": {
+      "changeDetector": "Change Detector",
+      "signal": "Signals",
+      "group": "Signals"
     }
   },
   "images": {
@@ -83,6 +88,17 @@
       "challenge": "Desafío",
       "challengeMsg": "Teniendo una lista de numeros del 1 al 10. Solo deben mostrarte los numeros pares",
       "increaseQuantity": "Incrementar Cantidad"
+    }
+  },
+  "signals": {
+    "title": "Signals",
+    "message": "Nueva característica para mejorar el control de cambios de las aplicaciones",
+    "expectedAction": "Se espera que se modifique la cantidad del model a 666 tras dos segundos. En consola podrá ver un log con el evento",
+    "signal": {
+      "showOtherExamples": "Mostrar otros ejemplos",
+      "increase": "Incrementar",
+      "decrease": "Disminuir",
+      "restart": "Reiniciar"
     }
   }
 }

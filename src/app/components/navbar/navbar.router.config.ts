@@ -44,6 +44,15 @@ export const routesConfig: RoutesConfig = {
       path: '/new-syntax',
     },
   ],
-  signals: [],
+  signals: [
+    {
+      label: 'changeDetector',
+      path: '/change-detector',
+    },
+    {
+      label: 'signal',
+      path: '/signal',
+    },
+  ],
   deferrable: [],
 };
