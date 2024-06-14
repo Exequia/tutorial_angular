@@ -34,7 +34,16 @@ export const routesConfig: RoutesConfig = {
       path: '/typed',
     },
   ],
-  sintaxys: [],
+  syntax: [
+    {
+      label: 'legacy',
+      path: '/legacy',
+    },
+    {
+      label: 'newSyntax',
+      path: '/new-syntax',
+    },
+  ],
   signals: [],
   deferrable: [],
 };

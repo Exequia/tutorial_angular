@@ -26,6 +26,11 @@
       "group": "Tipos",
       "untyped": "Sin tipado",
       "typed": "Con tipado"
+    },
+    "syntax": {
+      "legacy": "Legacy",
+      "newSyntax": "Nueva Sintaxis",
+      "group": "Nueva Sintaxis"
     }
   },
   "images": {
@@ -66,5 +71,18 @@
     },
     "formValues": "Valores del Formulario",
     "modelValues": "Valores del Modelo. (Se actualizará al validar el formulario)"
+  },
+  "syntax": {
+    "title": "Sintaxis estructural en las vistas",
+    "message": "Con la nueva version de Angular, las directivas estructurales han cambiado su sintaxis resultando más legible",
+    "legacy": {
+      "switchUserLogged": "Usuario Logueado",
+      "welcome": "Bienvenido de nuevo",
+      "login": "Pendiente de iniciar sesión",
+      "forLst": "Lista de elementos",
+      "challenge": "Desafío",
+      "challengeMsg": "Teniendo una lista de numeros del 1 al 10. Solo deben mostrarte los numeros pares",
+      "increaseQuantity": "Incrementar Cantidad"
+    }
   }
 }

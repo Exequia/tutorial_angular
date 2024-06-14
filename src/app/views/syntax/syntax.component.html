@@ -1,1 +1,30 @@
-<p>syntax works!</p>
+<h1>{{ "syntax.title" | translate }}</h1>
+<div class="alert alert-info">
+  {{ "syntax.message" | translate }}
+  <a href="https://v17.angular.io/api" target="_blank">
+    {{ "commons.doc" | translate }}</a
+  >
+</div>
+<hr />
+<div class="d-flex justify-content-around mb-3">
+  <a
+    [routerLink]="'legacy'"
+    routerLinkActive="active"
+    class="btn btn-outline-secondary"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "navbar.syntax.legacy" | translate }}
+  </a>
+  <a
+    [routerLink]="'new-syntax'"
+    routerLinkActive="active"
+    class="btn btn-outline-success"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "navbar.syntax.newSyntax" | translate }}
+  </a>
+</div>
+
+<router-outlet />

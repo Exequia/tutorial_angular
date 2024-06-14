@@ -27,7 +27,7 @@ export const routes: Routes = [
     path: 'types',
     loadComponent: () => import('./views/types/types.component'),
     children: [
-      { path: '', redirectTo: 'native', pathMatch: 'full' },
+      { path: '', redirectTo: 'untyped', pathMatch: 'full' },
       {
         path: 'untyped',
         loadComponent: () => import('./components/untyped/untyped.component'),
@@ -35,6 +35,22 @@ export const routes: Routes = [
       {
         path: 'typed',
         loadComponent: () => import('./components/typed/typed.component'),
+      },
+    ],
+  },
+  {
+    path: 'syntax',
+    loadComponent: () => import('./views/syntax/syntax.component'),
+    children: [
+      { path: '', redirectTo: 'legacy', pathMatch: 'full' },
+      {
+        path: 'legacy',
+        loadComponent: () => import('./components/legacy/legacy.component'),
+      },
+      {
+        path: 'new-syntax',
+        loadComponent: () =>
+          import('./components/new-syntax/new-syntax.component'),
       },
     ],
   },

@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-syntax',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule, RouterModule],
   templateUrl: './syntax.component.html',
   styleUrl: './syntax.component.scss',
 })

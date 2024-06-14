@@ -13,3 +13,9 @@ export interface PersonForm {
   age: FormControl<number>;
   height: FormControl<number>;
 }
+
+export interface Item {
+  id: number;
+  name: string;
+  quantity: number;
+}

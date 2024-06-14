@@ -1,0 +1,102 @@
+<div class="mt-5">
+  <h2>IF</h2>
+  <!-- Toggle switch for isLoggedIn -->
+  <div class="form-check form-switch">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      [(ngModel)]="isLoggedIn"
+      id="toggleSwitchUser"
+    />
+    <label class="form-check-label" for="toggleSwitchUser">
+      {{ "syntax.legacy.switchUserLogged" | translate }}
+    </label>
+  </div>
+
+  <!-- Example of *ngIf with else -->
+  @if (isLoggedIn) {
+  <h4>{{ "syntax.legacy.welcome" | translate }}!</h4>
+  } @else {
+  <h4>{{ "syntax.legacy.login" | translate }}</h4>
+  }
+
+  <hr />
+  <h2>FOR loop</h2>
+  <!-- Example of *ngFor -->
+  <div class="mt-4">
+    <p>
+      {{ "syntax.legacy.forLst" | translate }}
+    </p>
+    <ul class="list-group">
+      @for (item of items; track item.id) {
+      <li class="list-group-item">{{ item.name }} -> {{ item.quantity }}</li>
+      }
+    </ul>
+  </div>
+
+  <hr />
+  <h2>Switch</h2>
+  <!-- Example of *ngSwitch -->
+  <div class="mt-4">
+    <div
+      class="btn-group my-3"
+      role="group"
+      aria-label="Basic radio toggle button group"
+    >
+      <input
+        type="radio"
+        class="btn-check"
+        name="userRole"
+        id="adminRadio"
+        value="admin"
+        [(ngModel)]="userRole"
+      />
+      <label class="btn btn-outline-primary" for="adminRadio">Admin</label>
+
+      <input
+        type="radio"
+        class="btn-check"
+        name="userRole"
+        id="userRadio"
+        value="user"
+        [(ngModel)]="userRole"
+      />
+      <label class="btn btn-outline-primary" for="userRadio">User</label>
+
+      <input
+        type="radio"
+        class="btn-check"
+        name="userRole"
+        id="otherRadio"
+        value="other"
+        [(ngModel)]="userRole"
+      />
+      <label class="btn btn-outline-primary" for="otherRadio">Other</label>
+    </div>
+
+    @switch (userRole) { @case ('admin') {
+    <div class="alert alert-primary">You have administrative privileges.</div>
+    } @case ('user') {
+    <div class="alert alert-secondary">You are a regular user.</div>
+    } @case ('other') {
+    <div class="alert alert-warning">You have some other role.</div>
+    } @default {
+    <div class="alert alert-info">Role not recognized.</div>
+    } }
+
+    <hr />
+    <h2>
+      {{ "syntax.legacy.challenge" | translate }}
+    </h2>
+    <div class="alert alert-info">
+      {{ "syntax.legacy.challengeMsg" | translate }}
+    </div>
+    <ul>
+      @for (value of challenge; track $index) { @if (value % 2 === 0) {
+      <li class="mr-1 bg-info">
+        {{ value }}
+      </li>
+      } }
+    </ul>
+  </div>
+</div>
