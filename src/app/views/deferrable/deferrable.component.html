@@ -1,1 +1,31 @@
-<p>deferrable works!</p>
+<h1>{{ "deferrable.title" | translate }}</h1>
+<div class="alert alert-info">
+  {{ "deferrable.message" | translate }}
+  <a href="https://v17.angular.io/guide/defer" target="_blank">{{
+    "commons.doc" | translate
+  }}</a>
+</div>
+<hr />
+
+<div class="d-flex justify-content-around mb-3">
+  <a
+    [routerLink]="'basic'"
+    routerLinkActive="active"
+    class="btn btn-outline-secondary"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "navbar.deferrable.basic" | translate }}
+  </a>
+  <a
+    [routerLink]="'advanced'"
+    routerLinkActive="active"
+    class="btn btn-outline-success"
+    tabindex="-1"
+    role="button"
+  >
+    {{ "navbar.deferrable.advanced" | translate }}
+  </a>
+</div>
+
+<router-outlet />

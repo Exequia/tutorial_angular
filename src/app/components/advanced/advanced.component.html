@@ -1,0 +1,20 @@
+<div class="alert alert-warning">
+  <span>{{ "commons.console" | translate : { section: "Network" } }}</span>
+</div>
+<div class="alert alert-secondary" style="height: 70vh">
+  <span
+    [innerHTML]="
+      'deferrable.advanced.scrollMessage' | translate : { section: 'Console' }
+    "
+  ></span>
+</div>
+
+<div class="alert alert-light p-5">
+  @defer (on viewport) {
+  <pre>
+  {{ users$ | async | json }}
+  </pre>
+  } @placeholder {
+  <app-placeholder />
+  }
+</div>

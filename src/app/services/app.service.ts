@@ -1,16 +1,15 @@
-import { Injectable } from '@angular/core';
-import { Item } from '../models/app.model';
+import { Injectable, inject } from '@angular/core';
+import { Item, UserApiResponse } from '../models/app.model';
 import { Observable, delay, of } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AppService {
-  constructor() {}
+  private readonly _http = inject(HttpClient);
 
-  getDummyItem(): Observable<Item> {
-    return of({ id: 1, name: 'Item 1', quantity: 1 }).pipe(
-      delay(2000) // Simulamos un retardo de 2 segundos
-    );
+  getUsers(): Observable<UserApiResponse[]> {
+    return this._http.get<UserApiResponse[]>('https://randomuser.me/api/');
   }
 }

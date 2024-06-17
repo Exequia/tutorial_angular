@@ -36,6 +36,11 @@
       "changeDetector": "Change Detector",
       "signal": "Signals",
       "group": "Signals"
+    },
+    "deferrable": {
+      "basic": "Básico",
+      "advanced": "Avanzado",
+      "group": "Vistas"
     }
   },
   "images": {
@@ -99,6 +104,19 @@
       "increase": "Incrementar",
       "decrease": "Disminuir",
       "restart": "Reiniciar"
+    }
+  },
+  "deferrable": {
+    "title": "Vistas Aplazables (Deferrable Views)",
+    "message": "La carga de los elementos de la vista se puede aplazar para mejorar la experiencia de usuario",
+    "basic": {
+      "switchPlaceholder": "Cambiar el estado del placeholder",
+      "placeholderValue": "Valor del placeholder",
+      "loadingMessage": "Emulando carga durante 2 segundos",
+      "table": "Datos de ejemplo"
+    },
+    "advanced": {
+      "scrollMessage": "OH! Y este elemento? <br>Quizás debería hacer scroll hacia abajo y ver qué sucede"
     }
   }
 }

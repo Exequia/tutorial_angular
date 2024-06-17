@@ -54,5 +54,14 @@ export const routesConfig: RoutesConfig = {
       path: '/signal',
     },
   ],
-  deferrable: [],
+  deferrable: [
+    {
+      label: 'basic',
+      path: '/basic',
+    },
+    {
+      label: 'advanced',
+      path: '/advanced',
+    },
+  ],
 };

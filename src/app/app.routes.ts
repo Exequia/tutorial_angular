@@ -70,5 +70,20 @@ export const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'deferrable',
+    loadComponent: () => import('./views/deferrable/deferrable.component'),
+    children: [
+      { path: '', redirectTo: 'change-detector', pathMatch: 'full' },
+      {
+        path: 'basic',
+        loadComponent: () => import('./components/basic/basic.component'),
+      },
+      {
+        path: 'advanced',
+        loadComponent: () => import('./components/advanced/advanced.component'),
+      },
+    ],
+  },
   { path: 'home', redirectTo: '/', pathMatch: 'full' },
 ];
